@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # bootstrap
 gem 'twitter-bootstrap-rails'
+
+# heroku error
+gem 'rails_12factor', group: :production
