@@ -51,6 +51,9 @@ group :development do
 
   # mail
   gem 'letter_opener_web'
+
+  # dotenv
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -64,3 +67,10 @@ gem 'rails_12factor', group: :production
 
 #login
 gem 'devise'
+
+# oauth
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'faraday', '< 0.10'
