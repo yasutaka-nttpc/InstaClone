@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :omniauthable
 
-  ＃image
+  # image
   mount_uploader :avatar, AvatarUploader
 
   has_many :posts
