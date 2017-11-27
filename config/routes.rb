@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-#  devise_for :users
 
   resources :posts, only: [:index, :new, :create, :edit, :update, :destroy] do
   end
@@ -15,6 +14,7 @@ Rails.application.routes.draw do
 
   # sns login
   devise_for :users, controllers: {
+    registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
-  }
+}
 end
